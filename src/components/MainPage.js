@@ -5,7 +5,7 @@ import { SinglePokemon } from '../components/SinglePokemon'
 
 export function MainPage(){
   const { data : { pokemons = [] } = {}} = useQuery(GET_POKEMONS, {
-      variables: { first: 9 }
+      variables: { first: 20 }
     })
   
 
