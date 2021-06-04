@@ -2,18 +2,13 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
 .select {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.pokemons {
+.container {
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +16,17 @@
   max-width: 80%;
 }
 
-.pokemons
+.container
+.pokemoncard {
+  width: 49%;
+  background-color: transparent;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container
 .pokemon_name {
   background-color: #61dafb;
   color: #FFFF;
@@ -30,17 +35,18 @@
   padding: 5px;
 }
 
-.pokemons
+.container
 .pokemon_image {
-  max-width: 50%;
-  height: auto;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   color: #FFFF;
   text-align: center;
   font-family: 'Roboto', sans-serif;
   padding: 5px;
 }
-
-
 
 .App-header {
   background-color: #282c34;

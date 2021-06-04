@@ -8,13 +8,11 @@ export function MainPage(){
       variables: { first: 20 }
     })
   
-
   return (
-    <div className="pokemons">
+    <div className="container">
       {
         pokemons && pokemons.map(pokemon => <SinglePokemon key={pokemon.id} pokemon={pokemon}/>)
       }
-
     </div>  
   )
 }
