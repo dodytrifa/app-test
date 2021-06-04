@@ -18,7 +18,7 @@ function App() {
           <Route exact path='/'>
             <MainPage />
           </Route>
-          <Route path='/details/:id' component={<Detail/>}>
+          <Route path='/details/:name' children={<Detail/>} >
           </Route>
         </Switch>
       </div>

@@ -1,25 +1,28 @@
 import React from 'react'
 
-function Filter() {
+function Filter({getFilter}) {
+
   return (
     <div>
-      <select className="select">
-        <option value="all">All</option>
-        <option value="bug">Bug</option>
-        <option value="dark">Dark</option>
-        <option value="dragon">Dragon</option>
-        <option value="electric">Electric</option>
-        <option value="fairy">Fairy</option>
-        <option value="fire">Fire</option>
-        <option value="flying">Flying</option>
-        <option value="ghost">Ghost</option>
-        <option value="grass">Grass</option>
-        <option value="ice">Ice</option>
-        <option value="normal">Normal</option>
-        <option value="poison">Poison</option>
-        <option value="rock">Rock</option>
-        <option value="steel">Steel</option>
-        <option value="water">Water</option>
+      <select className="select" onChange={getFilter}>
+        <option value="">All</option>
+        <option value="Bug">Bug</option>
+        <option value="Dragon">Dragon</option>
+        <option value="Electric">Electric</option>
+        <option value="Fairy">Fairy</option>
+        <option value="Fire">Fire</option>
+        <option value="Flying">Flying</option>
+        <option value="Fighting">Fighting</option>
+        <option value="Ghost">Ghost</option>
+        <option value="Grass">Grass</option>
+        <option value="Ground">Ground</option>
+        <option value="Ice">Ice</option>
+        <option value="Normal">Normal</option>
+        <option value="Poison">Poison</option>
+        <option value="Psychic">Psychic</option>
+        <option value="Rock">Rock</option>
+        <option value="Steel">Steel</option>
+        <option value="Water">Water</option>
       </select>
     </div>
   )
