@@ -1,8 +1,10 @@
 import './App.css';
 import ApolloClient from 'apollo-boost';
 import { ApolloProvider } from '@apollo/react-hooks';
-import {MainPage} from './components/MainPage'
-import Filter from './components/Filter'
+import { MainPage } from './pages/MainPage'
+import {Switch, Route} from 'react-router-dom'
+import Detail from './pages/DetailPage'
+
 
 function App() {
   const client = new ApolloClient({
@@ -11,12 +13,17 @@ function App() {
 
   return (
     <ApolloProvider client={client}>
-      <main>
-        <h1 className="App">Pokemon App</h1>
-        <h1 className="App">Filter the Pokemon</h1>
-        <Filter />
-        <MainPage />
-      </main>
+      <div className="App">
+        <Switch>
+          <Route exact path='/'>
+            <MainPage />
+          </Route>
+  
+          <Route path='/details/:id' component={<Detail/>}>
+            
+          </Route>
+        </Switch>
+      </div>
     </ApolloProvider>
   );
 }

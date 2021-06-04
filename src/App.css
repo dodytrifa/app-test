@@ -1,4 +1,4 @@
-.App {
+h1, h3 {
   text-align: center;
 }
 
@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 
 .container {
@@ -18,7 +19,6 @@
 
 .container
 .pokemoncard {
-  width: 49%;
   background-color: transparent;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
@@ -37,15 +37,14 @@
 
 .container
 .pokemon_image {
-  min-height: 300px;
+  padding: 5px;
   display: flex;
+  color: #FFFF;
+  min-height: 300px;
+  text-align: center;
   align-items: center;
   justify-content: center;
-
-  color: #FFFF;
-  text-align: center;
   font-family: 'Roboto', sans-serif;
-  padding: 5px;
 }
 
 .App-header {
