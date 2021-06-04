@@ -28,8 +28,10 @@ export const GET_DETAIL = gql`
   query pokemon($name: String) {
     pokemon(name: $name) {
       id
+      number
       name
       maxHP
+      maxCP
       image
       classification
       weight {
@@ -47,6 +49,9 @@ export const GET_DETAIL = gql`
         name
       }
       types
+      weaknesses
+      fleeRate
+      resistant
     }
   }
 `

@@ -1,5 +1,13 @@
-h1, h3 {
+h1, h2 {
   text-align: center;
+  align-items: center;
+  color: azure;
+}
+
+.link {
+  text-decoration: none;
+  /* color: darkgrey; */
+  color: #898D92;
 }
 
 .select {
@@ -75,7 +83,7 @@ h1, h3 {
   align-items: space-between;
   justify-content: center;
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 65%;
 }
 
 .pokemon {

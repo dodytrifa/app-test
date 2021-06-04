@@ -15,14 +15,18 @@ export default function DetailPage() {
     <div className="detail">
       <div className="pokemon_image">
         <img src={pokemon.image} alt={pokemon.name} />
-      <p>Name: {name}</p>
-      <p>Pokemon Class: {pokemon.classification}</p>
+      <p>#{pokemon.number}</p>
+      <h3>Name: {name}</h3>
+
       {/* <p>Weight Range: {pokemon.weight.minimum} </p>
       <p>Weight Range: {pokemon.weight.maximum} </p> */}
       <p>MaxHP: {pokemon.maxHP}</p>
+      <p>MaxCP: {pokemon.maxCP}</p>
       {/* <p>Pokemon Evolution: {pokemon.evolutionRequirements}</p> */}
-      <p>Pokemon Class: {pokemon.classification}</p>
-      <p>Pokemon Class: {pokemon.classification}</p>
+      <p>FleeRate: {pokemon.fleeRate}</p>
+      <p>Classification: {pokemon.classification}</p>
+      <p>Weaknesses: {pokemon.weaknesses}</p>
+      <p>Resistant: {pokemon.resistant}</p>
       </div>
     </div>
     </>
