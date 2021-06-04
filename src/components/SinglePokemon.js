@@ -2,7 +2,7 @@
 export function SinglePokemon({pokemon}) {
 
   return (
-    <div className="pokemoncard">
+    <div className="pokemon">
       <div className="pokemon_image">
         <img src={pokemon.image} alt={pokemon.name} />
       </div>

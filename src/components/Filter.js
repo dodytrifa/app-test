@@ -2,8 +2,8 @@ import React from 'react'
 
 function Filter() {
   return (
-    <div className="select">
-      <select className="pokemon-filter">
+    <div>
+      <select className="select">
         <option value="all">All</option>
         <option value="bug">Bug</option>
         <option value="dark">Dark</option>
