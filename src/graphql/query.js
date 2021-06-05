@@ -36,16 +36,13 @@ export const GET_DETAIL = gql`
         fast {
           name
           damage
-          type
         }
         special {
           name
           damage
-          type
         }
       }
       evolutionRequirements {
-        amount
         name
       }
     }

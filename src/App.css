@@ -2,6 +2,16 @@ h1, h2 {
   text-align: center;
   align-items: center;
   color: azure;
+  margin: 1.5em 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin:0;
+}
+
+p {
+  font-size: 1.15rem;
 }
 
 .link {
@@ -33,8 +43,20 @@ h1, h2 {
   max-width: 65%;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: space-between;
 }
+
+.pokemon_image_detail {
+  width: 50em;
+  margin: 1.3em 0;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
 
 .pokemon {
   margin: 25px;
@@ -46,7 +68,7 @@ h1, h2 {
 }
 
 .detail {
-  width: 30em;
+  width: 50%;
   display: flex;
   padding: 20px;
   margin: 0 auto;
