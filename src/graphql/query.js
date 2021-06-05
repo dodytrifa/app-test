@@ -3,23 +3,9 @@ import gql from'graphql-tag'
 export const GET_POKEMONS = gql`
   query pokemons($first: Int!) {
     pokemons(first: $first) {
-      id
-      name
-      maxHP
+      name 
       image
       types
-      classification
-      weight {
-        minimum
-        maximum
-      }
-      attacks {
-        special {
-          name 
-          damage
-        }
-      }
-      
     }
   }
 `

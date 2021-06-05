@@ -1,7 +1,9 @@
 body {
-  background-repeat: repeat-x;
-  margin: 0;
   background: linear-gradient(to top, #dc2f02,#E9795C );
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;

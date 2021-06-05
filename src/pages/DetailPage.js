@@ -12,6 +12,7 @@ export default function DetailPage() {
   return (
     <>
     <h1>Pokemon Details Page</h1>
+    <div className="wrapperDetail">
     <div className="detail">
       <div className="pokemon_image">
         <img src={pokemon.image} alt={pokemon.name} />
@@ -28,6 +29,7 @@ export default function DetailPage() {
       <p>Weaknesses: {pokemon.weaknesses}</p>
       <p>Resistant: {pokemon.resistant}</p>
       </div>
+    </div>
     </div>
     </>
   )

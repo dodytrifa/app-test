@@ -4,6 +4,10 @@ h1, h2 {
   color: azure;
 }
 
+/* .App {
+  height: 100vh;
+} */
+
 .link {
   text-decoration: none;
   /* color: darkgrey; */

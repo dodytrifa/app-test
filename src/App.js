@@ -18,7 +18,8 @@ function App() {
           <Route exact path='/'>
             <MainPage />
           </Route>
-          <Route path='/details/:name' children={<Detail/>} >
+          <Route path='/details/:name' 
+          children={<Detail/>} >
           </Route>
         </Switch>
       </div>

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 export function SinglePokemon({pokemon}) {
 
   return (
+    
     <div className="pokemon">
       <Link to={`/details/${pokemon.name}`} className="link" >
         <div className="pokemon_image">
