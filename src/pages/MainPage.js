@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
-import { useQuery } from '@apollo/react-hooks';
-import { GET_POKEMONS } from '../graphql/query'
-import { SinglePokemon } from '../components/SinglePokemon'
 import Filter from '../components/Filter'
+import { GET_POKEMONS } from '../graphql/query'
+import { useQuery } from '@apollo/react-hooks';
+import { SinglePokemon } from '../components/SinglePokemon'
+import { Link } from 'react-router-dom'
+
 
 export function MainPage(){
   const { data : { pokemons = [] } = {}} = useQuery(GET_POKEMONS, {
@@ -27,7 +29,7 @@ export function MainPage(){
 
   return (
     <>
-      <h1>Pokemon App</h1>
+      <Link to="/" className="link"><h1>Pokemon App</h1></Link> 
       <div className="filter">
         <h2>Filter the Pokemon: </h2>
         <Filter getFilter={getFilter} />
@@ -39,6 +41,5 @@ export function MainPage(){
       </div>  
     </>
   )
-  
 }
 

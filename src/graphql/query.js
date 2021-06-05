@@ -14,30 +14,40 @@ export const GET_DETAIL = gql`
   query pokemon($name: String) {
     pokemon(name: $name) {
       id
-      number
       name
       maxHP
       maxCP
       image
+      types
+      number
+      fleeRate
+      resistant
+      weaknesses
       classification
       weight {
         minimum
         maximum
       }
+      height {
+        minimum
+        maximum
+      }
       attacks {
-        special {
-          name 
+        fast {
+          name
           damage
+          type
+        }
+        special {
+          name
+          damage
+          type
         }
       }
       evolutionRequirements {
         amount
         name
       }
-      types
-      weaknesses
-      fleeRate
-      resistant
     }
   }
 `
