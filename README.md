@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Please visit to the deployment link > [Deployment Link](https://pokedex-dody.web.app/).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
